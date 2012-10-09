@@ -120,6 +120,10 @@ public class Initializer
                                                    null));
         }
 
+        if (classReferenceWarningPrinter.getWarningCount() > 0 && configuration.preverifyStopAfterWarnings) {
+            throw new IOException("There were warnings and preverifier was configured to stop.");
+        }
+
         // Initialize the Class.forName references.
         WarningPrinter dynamicClassReferenceNotePrinter = new WarningPrinter(System.out, configuration.note);
         WarningPrinter classForNameNotePrinter          = new WarningPrinter(System.out, configuration.note);

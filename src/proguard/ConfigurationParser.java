@@ -194,6 +194,7 @@ public class ConfigurationParser
 
             else if (ConfigurationConstants.DONT_PREVERIFY_OPTION                            .startsWith(nextWord)) configuration.preverify                        = parseNoArgument(false);
             else if (ConfigurationConstants.MICRO_EDITION_OPTION                             .startsWith(nextWord)) configuration.microEdition                     = parseNoArgument(true);
+            else if (ConfigurationConstants.PREVERIFY_STOP_AFTER_WARNINGS                    .startsWith(nextWord)) configuration.preverifyStopAfterWarnings       = parseNoArgument(true);
 
             else if (ConfigurationConstants.VERBOSE_OPTION                                   .startsWith(nextWord)) configuration.verbose                          = parseNoArgument(true);
             else if (ConfigurationConstants.DONT_NOTE_OPTION                                 .startsWith(nextWord)) configuration.note                             = parseCommaSeparatedList("class name", true, true, false, false, true, false, true, false, configuration.note);

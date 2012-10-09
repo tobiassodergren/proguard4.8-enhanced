@@ -79,8 +79,9 @@ class ConfigurationConstants
     public static final String ADAPT_RESOURCE_FILE_NAMES_OPTION       = "-adaptresourcefilenames";
     public static final String ADAPT_RESOURCE_FILE_CONTENTS_OPTION    = "-adaptresourcefilecontents";
 
-    public static final String DONT_PREVERIFY_OPTION = "-dontpreverify";
-    public static final String MICRO_EDITION_OPTION  = "-microedition";
+    public static final String DONT_PREVERIFY_OPTION            = "-dontpreverify";
+    public static final String MICRO_EDITION_OPTION             = "-microedition";
+    public static final String PREVERIFY_STOP_AFTER_WARNINGS    = "-stopafterwarnings";
 
     public static final String VERBOSE_OPTION                                    = "-verbose";
     public static final String DONT_NOTE_OPTION                                  = "-dontnote";

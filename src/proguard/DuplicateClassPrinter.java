@@ -58,6 +58,6 @@ public class DuplicateClassPrinter implements ClassVisitor
     {
         notePrinter.print(libraryClass.getName(),
                           "Note: duplicate definition of library class [" +
-                          ClassUtil.externalClassName(libraryClass.getName()) + "]");
+                          ClassUtil.externalClassName(libraryClass.getName()) +  "]");
     }
 }

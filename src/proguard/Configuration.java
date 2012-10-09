@@ -283,6 +283,11 @@ public class Configuration
      */
     public boolean   microEdition                     = false;
 
+    /**
+     * Specifies if preverify should stop after warnings if any have been encountered
+     */
+    public boolean   preverifyStopAfterWarnings       = false;
+
     ///////////////////////////////////////////////////////////////////////////
     // General options.
     ///////////////////////////////////////////////////////////////////////////
